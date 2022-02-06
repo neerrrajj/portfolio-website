@@ -1,0 +1,127 @@
+.app__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.app__navbar-logo {
+  z-index: 100;
+}
+
+.app__navbar-logo img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.app__navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app__navbar-links p,
+.app__navbar-container p {
+  font-family: var(--font-sub);
+  font-size: 0.85rem;
+  color: var(--color-light);
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.app__navbar-links a:hover,
+.app__navbar-container a:hover {
+  color: var(--color-sub);
+  transition: 0.3s ease;
+}
+
+.app__navbar-links button {
+  margin: 0 1rem;
+  font-size: 0.85rem;
+}
+
+.app__navbar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .app__navbar-links {
+    display: none;
+  }
+
+  .app__navbar-menu {
+    display: flex;
+  }
+
+  .app__navbar-menu .navbar-menu,
+  .app__navbar-container .container-close {
+    cursor: pointer;
+  }
+
+  .app__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(4, 12, 24, 0.75);
+    z-index: 10;
+  }
+
+  .app__navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    top: 0;
+    right: 0;
+    position: absolute;
+    min-width: 350px;
+    height: 100vh;
+    background: #08172e;
+    z-index: 100;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .app__navbar-container .container-close {
+    position: absolute;
+    top: 47px;
+    right: 47px;
+  }
+
+  .app__navbar-container .container-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app__navbar-container .container-links p,
+  .app__navbar-container .container-links button {
+    margin: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  .app__navbar-container .container-links button {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-height: 750px) {
+  .app__navbar-container .container-links p,
+  .app__navbar-container .container-links button {
+    margin: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app__navbar-container {
+    min-width: 300px;
+  }
+
+  .app__navbar-container .container-links p,
+  .app__navbar-container .container-links button {
+    margin: 2rem;
+    font-size: 1rem;
+  }
+}
