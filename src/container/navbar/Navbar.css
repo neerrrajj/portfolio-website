@@ -135,7 +135,7 @@
 
 @media screen and (min-width: 1600px) {
   .app__navbar {
-    padding : 2.5rem 6rem ;
+    padding : 4rem 6rem ;
   }
 
   .app__navbar-logo img {
@@ -143,12 +143,12 @@
   }
 
   .app__navbar-links p {
-    font-size: 1.2rem;
-    margin : 0 2rem;
+    font-size: 1.8rem;
+    margin : 0 3rem;
   }
 
   .app__navbar-links button {
     margin: 0 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }

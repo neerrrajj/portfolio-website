@@ -84,8 +84,7 @@
   }
   
   .app__header-content {
-    margin-right: 0;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
   }
   
   .app__header-content h1 {
@@ -146,9 +145,13 @@
     margin: 6rem 8rem;
   }
 
+  .app__header-content {
+    margin-right: 10rem;
+  }
+
   .app__header-content p:first-child
    {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 4rem;
   }
 
@@ -164,14 +167,15 @@
 
   .app__header-content-p
    {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
     margin: 4rem 0 5rem;
   }
 
   .app__header-content-cta button {
-    font-size: 1.5rem;
-    padding: 1rem 1.8rem;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    margin-right: 5rem;
   }
 
   .app__header-img img{

@@ -15,16 +15,15 @@ a {
   color: unset;
 }
 
+.blue-text {
+  color: var(--color-sub);
+}
+
 .subtext {
   color: var(--color-sub);
   font-family: var(--font-sub);
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-
-.blue-text {
-  color: var(--color-sub);
 }
 
 .border__button {
@@ -49,6 +48,16 @@ a {
   color: white;
   background-color: #005C97;
   cursor: pointer;
+}
+
+@media screen and (min-width : 1700px) {
+  .subtext{
+    font-size: 1.8rem ;
+  }
+
+  .border__button {
+    padding: 1.5rem 3rem;
+  }
 }
 
 .slide-left {
