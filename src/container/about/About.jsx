@@ -30,7 +30,7 @@ const About = () => {
           </ul>
         </div>
         <div className="app__about-img">
-          <img src={AboutImage} alt='About image'/>
+          <img src={AboutImage} alt='About'/>
         </div>
       </div>
     </div>

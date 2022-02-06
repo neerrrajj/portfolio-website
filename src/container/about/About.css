@@ -9,6 +9,7 @@
 .app__about-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .app__about-content-text {
@@ -72,10 +73,6 @@
 
   .app__about-content-text {
     margin: 0 0 4rem 0;
-  }
-
-  .app__about-img {
-    text-align: center;
   }
 
   .app__about-img img {

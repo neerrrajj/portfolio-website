@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
+  background-color: var(--color-bg);
 }
 
 .app__navbar-logo {
@@ -47,16 +48,16 @@
   .app__navbar-links {
     display: none;
   }
-  
+
   .app__navbar-menu {
     display: flex;
   }
-  
+
   .app__navbar-menu .navbar-menu,
   .app__navbar-container .container-close {
     cursor: pointer;
   }
-  
+
   .app__backdrop {
     position: fixed;
     top: 0;
@@ -66,12 +67,12 @@
     background: rgba(4, 12, 24, 0.75);
     z-index: 10;
   }
-  
+
   .app__navbar-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     top: 0;
     right: 0;
     position: absolute;
@@ -81,25 +82,25 @@
     z-index: 100;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
   }
-  
+
   .app__navbar-container .container-close {
     position: absolute;
     top: 41px;
     right: 48px;
   }
-  
+
   .app__navbar-container .container-links {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .app__navbar-container .container-links p,
   .app__navbar-container .container-links button {
     margin: 2.5rem;
     font-size: 1.1rem;
   }
-  
+
   .app__navbar-container .container-links button {
     padding: 1rem 2rem;
   }
@@ -117,29 +118,29 @@
   .app__navbar {
     padding: 1.5rem 2rem;
   }
-  
+
   .app__navbar-container {
     min-width: 300px;
   }
-  
+
   .app__navbar-container .container-links p,
   .app__navbar-container .container-links button {
     margin: 2rem;
     font-size: 1rem;
   }
-  
+
   .app__navbar-container .container-close {
     right: 32px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
   .app__navbar {
     padding : 4rem 6rem ;
   }
 
   .app__navbar-logo img {
-    width: 120px;
+    width: 150px;
   }
 
   .app__navbar-links p {

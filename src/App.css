@@ -67,25 +67,9 @@ a {
 @keyframes slide-left {
 
   0% {
-    /* transform: translateX(100%); */
-    right: -300px;
+    transform: translateX(100%);
   }
   100% {
-    /* transform: translateX(0%); */
-    right: 0;
-  }
-}
-
-.slide-right {
-  animation: slide-right 0.3s ease-in-out ;
-}
-
-@keyframes slide-right {
-
-  0% {
-    right: 0;
-  }
-  100% {
-    right: 300px;
+    transform: translateX(0%);
   }
 }
