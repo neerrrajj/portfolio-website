@@ -15,8 +15,16 @@ a {
   color: unset;
 }
 
-.section__padding {
-  padding: 4rem 6rem;
+.subtext {
+  color: var(--color-sub);
+  font-family: var(--font-sub);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.blue-text {
+  color: var(--color-sub);
 }
 
 .border__button {
@@ -25,9 +33,21 @@ a {
   padding: 0.7rem 1rem;
   border-radius: 5px;
   font-family: var(--font-sub);
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--color-sub);
   background: transparent;
+  cursor: pointer;
+}
+
+.color__button {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  font-family: var(--font-sub);
+  font-size: 0.85rem;
+  color: white;
+  background-color: #005C97;
   cursor: pointer;
 }
 
