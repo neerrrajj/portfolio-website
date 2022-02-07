@@ -1,0 +1,21 @@
+.app__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 6rem;
+}
+
+.headings {
+  font-family: var(--font-main);
+  color: var(--color-light);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}

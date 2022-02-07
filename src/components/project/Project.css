@@ -1,0 +1,17 @@
+.app__project {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 5rem 2rem 0;
+  width : 360px;
+}
+
+.app__project img {
+  width : 360px;
+  height: 170px;
+}
+
+.app__project p{
+  font-family: var(--font-main);
+  color: black;
+}
