@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 
-import { Navbar, Header, About, Projects, Contact } from './container'
+import { Navbar, Header, About, Projects, Contact, Footer } from './container'
 import './App.css'
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </Fragment>
   )
 }
