@@ -6,7 +6,7 @@ import './About.css'
 const About = () => {
   return (
     <div className="app__about">
-      <Heading sub="Who am I?" title="About me" />
+      <Heading sub="Who am I?" title="About Me" />
       <div className="app__about-content">
         <div className="app__about-content-text">
           <p>
