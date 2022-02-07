@@ -6,16 +6,57 @@
   padding: 4rem 6rem;
 }
 
-.headings {
+.app__projects-figma_designs{
+  margin-bottom: 3rem;
+}
+
+.app__projects-headings {
   font-family: var(--font-main);
   color: var(--color-light);
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
-.projects {
-  width: 100%;
+.app__projects-project_list {
   display: flex;
   justify-content: flex-start;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .app__projects {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__projects-project_list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app__projects {
+    padding: 4rem 2rem;
+  }
+
+  .app__projects-headings {
+    margin-left: 0;
+  }
+
+  .app__projects-project_list {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .app__projects {
+    margin: 6rem 8rem;
+  }
+
+  .app__projects-headings {
+    font-size: 2.2rem;
+    margin: 2rem 0 3rem 1rem;
+  }
 }

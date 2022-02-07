@@ -1,17 +1,95 @@
 .app__project {
-  background-color: white;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 0 5rem 2rem 0;
-  width : 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-right: 3rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
 }
 
-.app__project img {
-  width : 360px;
-  height: 170px;
+.app__project:last-child{
+  margin-right: 0rem !important;
 }
 
-.app__project p{
+.app__project:hover {
+  box-shadow: 0 0 10px #099fff;
+}
+
+.app__project-img img {
+  width: 100%
+}
+
+.app__project-img {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.app__project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.app__project-title p {
   font-family: var(--font-main);
-  color: black;
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .app__project {
+    margin-right: 2rem;
+  }
+
+  .app__project-title p {
+    max-width: 150px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__project {
+    margin: 0 0 2rem 0;
+  }
+
+  .app__project-title p {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .app__project {
+    margin-right: 5rem;
+  }
+
+  .app__project-img img {
+    width: 400px;
+  }
+
+  .app__project-title {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .app__project-title p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .app__project-img img {
+    width: 500px;
+  }
+
+  .app__project-title {
+    padding: 1rem 1.5rem;
+  }
+
+  .app__project-title p {
+    font-size: 1.5rem;
+  }
 }
