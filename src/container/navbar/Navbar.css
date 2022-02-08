@@ -66,6 +66,7 @@
     height: 100vh;
     background: rgba(4, 12, 24, 0.75);
     z-index: 10;
+    backdrop-filter: blur(3px);
   }
 
   .app__navbar-container {
@@ -75,14 +76,14 @@
 
     top: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     min-width: 350px;
     height: 100vh;
     background: #08172e;
     z-index: 100;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
   }
-
+  
   .app__navbar-container .container-close {
     position: absolute;
     top: 41px;
@@ -136,7 +137,7 @@
 
 @media screen and (min-width: 1700px) {
   .app__navbar {
-    padding : 4rem 6rem ;
+    padding: 4rem 6rem;
   }
 
   .app__navbar-logo img {
@@ -145,7 +146,7 @@
 
   .app__navbar-links p {
     font-size: 1.8rem;
-    margin : 0 3rem;
+    margin: 0 3rem;
   }
 
   .app__navbar-links button {
