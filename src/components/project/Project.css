@@ -12,7 +12,7 @@
 }
 
 .app__project:hover {
-  box-shadow: 0 0 10px #099fff;
+  box-shadow: 0 0 10px var(--color-sub);
 }
 
 .app__project:last-child {
@@ -39,6 +39,11 @@
   font-family: var(--font-main);
   color: var(--color-light);
   font-size: 1rem;
+}
+
+.modal h1 {
+  font-family: var(--font-main);
+  color : var(--color-light)
 }
 
 @media screen and (max-width: 1050px) {
