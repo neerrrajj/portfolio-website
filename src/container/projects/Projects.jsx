@@ -59,13 +59,19 @@ const Projects = () => {
           })}
         </div>
       </div>
-      <p className="app__projects-headings">Figma to React</p>
-      <div className="app__projects-project_list">
-        {figmaToReact.map(project => {
-          return (
-            <Project title={project.title} url={project.url} key={project.id} />
-          )
-        })}
+      <div className="app__projects-figma_to_react">
+        <p className="app__projects-headings">Figma to React</p>
+        <div className="app__projects-project_list">
+          {figmaToReact.map(project => {
+            return (
+              <Project
+                title={project.title}
+                url={project.url}
+                key={project.id}
+              />
+            )
+          })}
+        </div>
       </div>
     </div>
   )

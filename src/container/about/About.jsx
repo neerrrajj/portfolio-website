@@ -23,14 +23,30 @@ const About = () => {
           </p>
           <p>Here are a few technologies I'm familiar with:</p>
           <ul>
-            <li><span>🞂</span><span className='tech__heading'>Languages :</span> HTML, CSS, JavaScript (ES6+)</li>
-            <li><span>🞂</span><span className='tech__heading'>Frameworks / Libraries :</span> React, Material UI</li>
-            <li><span>🞂</span><span className='tech__heading'>Design :</span> Figma (wireframing, prototyping)</li>
-            <li><span>🞂</span><span className='tech__heading'>Tools :</span> Git & Github</li>
+            <li>
+              <span>🞂</span>
+              <span className="tech__heading">Languages : </span>
+              <span className="tech__name"> HTML, CSS, JavaScript (ES6+)</span>
+            </li>
+            <li>
+              <span>🞂</span>
+              <span className="tech__heading">Frameworks / Libraries : </span>
+              <span className="tech__name">React, Material UI</span>
+            </li>
+            <li>
+              <span>🞂</span>
+              <span className="tech__heading">Design : </span>
+              <span className="tech__name">Figma (wireframing & prototyping)</span>
+            </li>
+            <li>
+              <span>🞂</span>
+              <span className="tech__heading">Tools : </span>
+              <span className="tech__name"> Git & Github, VS Code, Chrome Dev Tools</span>
+            </li>
           </ul>
         </div>
         <div className="app__about-img">
-          <img src={AboutImage} alt='About'/>
+          <img src={AboutImage} alt="About" />
         </div>
       </div>
     </div>

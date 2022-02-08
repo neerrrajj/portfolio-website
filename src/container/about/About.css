@@ -27,19 +27,20 @@
 
 .app__about-content-text li {
   list-style: none;
-  line-height: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
 .app__about-content-text span {
-  font-size: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.7rem;
 }
 
 .tech__heading {
-  font-size: 1.2rem !important;
   margin-right: 0 !important;
   color: var(--color-sub);
+}
+
+.tech__name {
+  display: inline-block;
 }
 
 .app__about-img img {
@@ -85,7 +86,8 @@
     padding: 4rem 2rem;
   }
 
-  .app__about-content-text p {
+  .app__about-content-text p,
+  .app__about-content-text li {
     font-size: 1.1rem;
   }
 }
