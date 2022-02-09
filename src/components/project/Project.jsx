@@ -9,10 +9,12 @@ const Project = props => {
 
   const showModalHandler = () => {
     setShowModal(true)
+    document.body.style.overflow = 'hidden'
   }
 
   const closeModalHandler = () => {
     setShowModal(false)
+    document.body.style.overflow = 'unset'
   }
 
   return (

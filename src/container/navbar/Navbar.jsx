@@ -31,6 +31,18 @@ const Resume = () => (
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
+  const openNavbarMenu = () => {
+    setToggleMenu(true)
+    if (typeof window != 'undefined' && window.document) {
+      document.body.style.overflow = 'hidden'
+    }
+  }
+
+  const closeNavbarMenu = () => {
+    setToggleMenu(false)
+    document.body.style.overflow = 'unset'
+  }
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -44,21 +56,18 @@ const Navbar = () => {
         <AiOutlineMenu
           color="#099fff"
           size={28}
-          className='navbar-menu'
-          onClick={() => setToggleMenu(true)}
+          className="navbar-menu"
+          onClick={openNavbarMenu}
         />
         {toggleMenu && (
           <Fragment>
-            <div
-              className="app__backdrop"
-              onClick={() => setToggleMenu(false)}
-            />
+            <div className="app__backdrop" onClick={closeNavbarMenu} />
             <div className="app__navbar-container slide-left ">
               <AiOutlineClose
                 color="#099fff"
                 size={28}
                 className="container-close"
-                onClick={() => setToggleMenu(false)}
+                onClick={closeNavbarMenu}
               />
               <div className="container-links">
                 <NavLinks />
