@@ -8,6 +8,12 @@
   font-family: var(--font-sub);
   color: var(--color-light);
   font-size: 0.85rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.app__footer p:hover{
+  color: var(--color-sub);
 }
 
 @media screen and (min-width : 1700px) {

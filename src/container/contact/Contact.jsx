@@ -1,9 +1,6 @@
 import { Heading } from '../../components'
 import contactImage from '../../assets/contactimage.png'
-import Github from '../../assets/github.svg'
-import Linkedin from '../../assets/linkedin.svg'
-import Instagram from '../../assets/instagram.svg'
-import Twitter from '../../assets/twitter.svg'
+import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
 
 import './Contact.css'
 
@@ -25,11 +22,11 @@ const Contact = () => {
           </p>
           <button className="border__button">Say Hello</button>
           <p className='mail'>neerajprabhuram@gmail.com</p>
-          <div className="app__contact-socials">
-            <img src={Github}/>
-            <img src={Linkedin}/>
-            <img src={Instagram}/>
-            <img src={Twitter}/>
+          <div>
+            <FiGithub className='socials'/>
+            <FiInstagram className='socials'/>
+            <FiTwitter className='socials'/>
+            <FiLinkedin className='socials'/>
           </div>
         </div>
         <div className="app__contact-img">

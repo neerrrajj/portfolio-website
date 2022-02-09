@@ -36,32 +36,43 @@ a {
   color: var(--color-sub);
   background: transparent;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.border__button:hover {
+  background: rgb(7, 20, 39);
 }
 
 .color__button {
   border: none;
   outline: none;
   padding: 0.7rem 1rem;
+  border: 1px solid #005c97;
+  background: #005c97;
   border-radius: 5px;
   font-family: var(--font-sub);
   font-size: 0.85rem;
   color: white;
-  background-color: #005C97;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
-@media screen and (min-width : 1700px) {
-  .subtext{
-    font-size: 1.8rem ;
+.color__button:hover {
+  background: rgb(0, 68, 110);
+  border: 1px solid rgb(0, 68, 110);
+}
+
+@media screen and (min-width: 1700px) {
+  .subtext {
+    font-size: 1.8rem;
   }
 }
 
 .slide-left {
-  animation: slide-left 0.3s ease-in-out ;
+  animation: slide-left 0.3s ease-in-out;
 }
 
 @keyframes slide-left {
-
   0% {
     transform: translateX(100%);
   }
