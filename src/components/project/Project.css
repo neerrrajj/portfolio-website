@@ -41,11 +41,6 @@
   font-size: 1rem;
 }
 
-.modal h1 {
-  font-family: var(--font-main);
-  color : var(--color-light)
-}
-
 @media screen and (max-width: 1050px) {
   .app__project {
     margin-right: 2rem;

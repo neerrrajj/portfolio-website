@@ -32,6 +32,7 @@ const Project = props => {
             onClose={closeModalHandler}
             title={props.title}
             url={props.url}
+            type={props.type}
           />,
           document.getElementById('modal')
         )}

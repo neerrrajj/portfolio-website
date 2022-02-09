@@ -1,5 +1,4 @@
-import { Heading } from '../../components'
-import { Project } from '../../components'
+import { Heading, Project } from '../../components'
 
 import projectThumbnail from '../../assets/projectThumbnail.png'
 
@@ -41,6 +40,8 @@ const figmaToReact = [
   },
 ]
 
+
+
 const Projects = () => {
   return (
     <div className="app__projects">
@@ -53,6 +54,7 @@ const Projects = () => {
               <Project
                 title={project.title}
                 url={project.url}
+                type='figma'
                 key={project.id}
               />
             )
@@ -67,6 +69,7 @@ const Projects = () => {
               <Project
                 title={project.title}
                 url={project.url}
+                type='figmaToReact'
                 key={project.id}
               />
             )
