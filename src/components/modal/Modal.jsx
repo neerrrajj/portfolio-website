@@ -7,7 +7,7 @@ import './Modal.css'
 const ModalContent = props => {
   return (
     <Fragment>
-      {props.type == 'figma' && (
+      {props.type === 'figma' && (
         <div className="modal__overlay-img">
           <img src={figma1} />
         </div>
