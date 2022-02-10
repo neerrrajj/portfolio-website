@@ -28,19 +28,38 @@ const Resume = () => (
   </button>
 )
 
+const body = document.body
+let lastScroll = 0
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset
+  if (currentScroll <= 0) {
+    body.classList.remove('scroll-up')
+  }
+  if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
+    body.classList.remove('scroll-up')
+    body.classList.add('scroll-down')
+  }
+  if (currentScroll < lastScroll && body.classList.contains('scroll-down')) {
+    body.classList.remove('scroll-down')
+    body.classList.add('scroll-up')
+  }
+  lastScroll = currentScroll
+})
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   const openNavbarMenu = () => {
     setToggleMenu(true)
     if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden'
+      body.style.overflow = 'hidden'
     }
   }
 
   const closeNavbarMenu = () => {
     setToggleMenu(false)
-    document.body.style.overflow = 'unset'
+    body.style.overflow = 'unset'
   }
 
   return (

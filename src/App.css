@@ -36,7 +36,7 @@ a {
   color: var(--color-sub);
   background: transparent;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
 }
 
 .border__button:hover {
@@ -54,7 +54,7 @@ a {
   font-size: 0.85rem;
   color: white;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
 }
 
 .color__button:hover {

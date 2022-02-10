@@ -11,8 +11,8 @@ const Header = () => {
         <p className="app__header-content-p">
           I'm a self-taught Front-end Developer and UI Designer specializing in
           creating websites and designing User Interfaces. Currently, I'm
-          focussed on mastering the art and 
-          <span className="blue-text">I'm available for jobs</span>.
+          focussed on mastering the art and
+          <span className="blue-text"> I'm available for jobs</span>.
         </p>
         <div className="app__header-content-cta">
           <button className="border__button">Resume</button>
