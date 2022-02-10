@@ -35,6 +35,8 @@ const Project = props => {
             title={props.title}
             url={props.url}
             type={props.type}
+            description={props.description}
+            tech={props.tech}
           />,
           document.getElementById('modal')
         )}

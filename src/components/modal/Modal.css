@@ -28,8 +28,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 60%;
   max-height: 90vh;
-  width: 70%;
 }
 
 .modal__overlay-close {
@@ -55,4 +55,43 @@
 .modal__overlay-img img {
   width: 100%;
   height: 100%;
+}
+
+.modal__overlay-content { 
+  overflow-y: scroll;
+  padding : 0 1rem;
+  width: 100%;
+}
+
+.modal__overlay-content-main {
+  width: 100%;
+  display: flex;
+}
+
+.modal__overlay-content-main img {
+  max-width: 500px;
+  /* width: 100%; */
+  border: 0.25px solid rgba(255,255,255,0.25)
+}
+
+.modal__overlay-content-tech {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.modal__overlay-content-tech span {
+  font-family: var(--font-sub);
+  color: var(--color-sub);
+  margin-bottom: 2rem;
+  /* display: inline-block; */
+}
+
+.modal__overlay-content p {
+  font-family: var(--font-main);
+  color: var(--color-light);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  padding-right: 1rem;
 }

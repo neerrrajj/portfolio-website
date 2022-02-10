@@ -26,21 +26,28 @@ const figmaToReact = [
   {
     url: projectThumbnail,
     title: 'Portfolio website',
+    description:
+      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+    tech: ['React', 'CSS', 'BEM'],
     id: 4,
   },
   {
     url: projectThumbnail,
     title: 'AI Startup website',
+    description:
+      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+    tech: ['React', 'CSS', 'BEM'],
     id: 5,
   },
   {
     url: projectThumbnail,
     title: 'Restaurant website',
+    description:
+      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+    tech: ['React', 'CSS', 'BEM'],
     id: 6,
   },
 ]
-
-
 
 const Projects = () => {
   return (
@@ -52,9 +59,9 @@ const Projects = () => {
           {figmaDesigns.map(project => {
             return (
               <Project
+                type="figma"
                 title={project.title}
                 url={project.url}
-                type='figma'
                 key={project.id}
               />
             )
@@ -67,9 +74,11 @@ const Projects = () => {
           {figmaToReact.map(project => {
             return (
               <Project
+                type="figmaToReact"
                 title={project.title}
                 url={project.url}
-                type='figmaToReact'
+                description={project.description}
+                tech={project.tech}
                 key={project.id}
               />
             )
