@@ -129,8 +129,7 @@
     font-size: 1.1rem;
     margin: 1.5rem 0 2.5rem;
   }
-  
-  .app__header-content p:first-child,
+
   .app__header-content-cta button {
     font-size: 0.8rem;
   }

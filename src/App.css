@@ -23,7 +23,7 @@ a {
   color: var(--color-sub);
   font-family: var(--font-sub);
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .border__button {
@@ -62,9 +62,16 @@ a {
   border: 1px solid rgb(0, 68, 110);
 }
 
+@media screen and (max-width: 600px) {
+  .subtext {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (min-width: 1700px) {
   .subtext {
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 }
 

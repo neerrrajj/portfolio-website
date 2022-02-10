@@ -28,7 +28,9 @@ const Heading = props => {
           <p>{props.title}</p>
           <div className="app__heading-main-group-line" />
         </div>
-        <Icons type={props.type} />
+        <div className="app__heading-main-icons">
+          <Icons type={props.type} />
+        </div>
       </div>
     </div>
   )

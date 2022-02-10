@@ -18,7 +18,7 @@ const ModalContent = props => {
             <img src={props.url} />
             <div className="modal__overlay-content-tech">
               {props.tech.map(tech => {
-                return <span key={Math.random()}>{tech}</span>
+                return <span className='subtext' key={Math.random()}>{tech}</span>
               })}
             </div>
           </div>
