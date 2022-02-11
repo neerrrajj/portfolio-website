@@ -28,10 +28,16 @@
 .app__about-content-text li {
   list-style: none;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .app__about-content-text span {
   margin-right: 0.7rem;
+}
+
+.app__about-content-text span:first-child {
+  font-size: 0.75rem;
 }
 
 .tech__heading {
