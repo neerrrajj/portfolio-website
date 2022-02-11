@@ -1,6 +1,6 @@
 import { Heading } from '../../components/'
 import AboutImage from '../../assets/aboutimage.png'
-import {BsFillCaretRightFill} from 'react-icons/bs'
+import { BsFillCaretRightFill } from 'react-icons/bs'
 import './About.css'
 
 const About = () => {
@@ -24,24 +24,32 @@ const About = () => {
           <p>Here are a few technologies I'm familiar with:</p>
           <ul>
             <li>
-              <span><BsFillCaretRightFill/></span>
+              <span>
+                <BsFillCaretRightFill />
+              </span>
               <span className="tech__heading">Design : </span>
-              <span className="tech__name"> &nbsp;Figma</span>
+              <span className="tech__name">Figma</span>
             </li>
             <li>
-              <span><BsFillCaretRightFill/></span>
+              <span>
+                <BsFillCaretRightFill />
+              </span>
               <span className="tech__heading">Languages : </span>
-              <span className="tech__name">&nbsp;HTML, CSS, JavaScript (ES6+)</span>
+              <span className="tech__name">HTML, CSS, JavaScript </span>
             </li>
             <li>
-              <span><BsFillCaretRightFill/></span>
+              <span>
+                <BsFillCaretRightFill />
+              </span>
               <span className="tech__heading">Frameworks / Libraries : </span>
-              <span className="tech__name">&nbsp;React</span>
+              <span className="tech__name">React</span>
             </li>
             <li>
-              <span><BsFillCaretRightFill/></span>
+              <span>
+                <BsFillCaretRightFill />
+              </span>
               <span className="tech__heading">Tools : </span>
-              <span className="tech__name">&nbsp;Git & Github, VS Code</span>
+              <span className="tech__name">Git & Github, VS Code</span>
             </li>
           </ul>
         </div>

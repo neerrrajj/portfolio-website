@@ -28,8 +28,6 @@
 .app__about-content-text li {
   list-style: none;
   margin-bottom: 0.5rem;
-  display: flex;
-  align-items: flex-start;
 }
 
 .app__about-content-text span {
@@ -43,10 +41,6 @@
 .tech__heading {
   margin-right: 0 !important;
   color: var(--color-sub);
-}
-
-.tech__name {
-  display: inline-block;
 }
 
 .app__about-img img {

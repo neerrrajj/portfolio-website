@@ -30,26 +30,31 @@
   margin-bottom: 1rem;
 }
 
+.mail-group {
+  margin-bottom: 2rem;
+}
+
 .mail {
   font-size: 0.9rem !important;
   font-weight: 400 !important;
   cursor: pointer;
+  display: inline;
+  transition: 0.3s ease;
 }
 
 .mail:hover {
   color: var(--color-sub);
-  transition: 0.3s ease;
 }
 
 .socials {
   color: var(--color-light);
   font-size: 1.3rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   transition: 0.2s ease-in-out;
 }
 
 .socials:hover {
-  color: var(--color-sub)
+  color: var(--color-sub);
 }
 
 .app__contact-img img {
@@ -60,7 +65,7 @@
   .app__contact-content-text {
     margin-right: 5rem;
   }
-  
+
   .app__contact-img img {
     width: 350px;
   }
@@ -70,7 +75,7 @@
   .app__contact {
     padding: 4rem;
   }
-  
+
   .app__contact-img img {
     width: 300px;
   }
@@ -80,11 +85,11 @@
   .app__contact-content {
     flex-direction: column;
   }
-  
+
   .app__contact-content-text {
     margin: 0 0 4rem 0;
   }
-  
+
   .app__contact-img img {
     width: 350px;
   }
@@ -94,7 +99,7 @@
   .app__contact {
     padding: 4rem 2rem;
   }
-  
+
   .app__contact-content-text p {
     font-size: 1.1rem;
   }
@@ -110,30 +115,30 @@
   .app__contact {
     margin: 6rem 8rem;
   }
-  
+
   .app__contact-content-text {
     margin-right: 10rem;
   }
-  
+
   .app__contact-content-text p {
     font-size: 2rem;
     line-height: 3rem;
   }
-  
+
   .app__contact-content-text button {
     font-size: 2rem;
     padding: 1.5rem 3rem;
     margin: 3rem 0 2rem;
   }
-  
-  .mail{
+
+  .mail {
     font-size: 1.7rem !important;
     margin-bottom: 4rem !important;
   }
-  
-  .socials{
+
+  .socials {
     font-size: 2rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
 
   .app__contact-img img {
