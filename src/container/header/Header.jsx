@@ -4,7 +4,7 @@ import image from '../../assets/figma1.png'
 
 const Header = () => {
   return (
-    <div className="app__header">
+    <div className="app__header" id='home'>
       <div className="app__header-content">
         <p className="subtext">Hi, my name is</p>
         <h1>Neeraj.</h1>

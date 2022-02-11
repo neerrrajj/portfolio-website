@@ -42,11 +42,8 @@
   }
 
   .app__projects-headings {
+    font-size: 1.3rem;
     margin-left: 0;
-  }
-
-  .app__projects-project_list {
-    padding: 1rem 0;
   }
 }
 

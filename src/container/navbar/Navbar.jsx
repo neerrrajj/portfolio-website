@@ -1,34 +1,11 @@
+import ReactDOM from 'react-dom'
+
 import { Fragment, useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 import logo from '../../assets/logo.png'
 import image from '../../assets/figma1.png'
 import './Navbar.css'
-
-const NavLinks = () => (
-  <>
-    <p>
-      <a href="#home">Home</a>
-    </p>
-    <p>
-      <a href="#about">About</a>
-    </p>
-    <p>
-      <a href="#portfolio">Portfolio</a>
-    </p>
-    <p>
-      <a href="#contact">Contact</a>
-    </p>
-  </>
-)
-
-const Resume = () => (
-  <a href={image} download="resume">
-    <button type="button" className="border__button">
-      Resume
-    </button>
-  </a>
-)
 
 const body = document.body
 let lastScroll = 0
@@ -63,6 +40,43 @@ const Navbar = () => {
     setToggleMenu(false)
     body.style.overflow = 'unset'
   }
+
+  const NavLinks = () => (
+    <>
+      <p>
+        <a href="#home" onClick={closeNavbarMenu}>
+          Home
+        </a>
+      </p>
+      <p>
+        <a href="#about" onClick={closeNavbarMenu}>
+          About
+        </a>
+      </p>
+      <p>
+        <a href="#projects" onClick={closeNavbarMenu}>
+          Projects
+        </a>
+      </p>
+      <p>
+        <a href="#contact" onClick={closeNavbarMenu}>
+          Contact
+        </a>
+      </p>
+    </>
+  )
+
+  const Resume = () => (
+    <a href={image} download="resume">
+      <button
+        type="button"
+        className="border__button"
+        onClick={closeNavbarMenu}
+      >
+        Resume
+      </button>
+    </a>
+  )
 
   return (
     <nav className="app__navbar">

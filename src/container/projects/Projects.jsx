@@ -51,7 +51,7 @@ const figmaToReact = [
 
 const Projects = () => {
   return (
-    <div className="app__projects">
+    <div className="app__projects" id='projects'>
       <Heading sub="What have I done?" title="Projects" />
       <div className="app__projects-figma_designs">
         <p className="app__projects-headings">Figma Designs</p>
