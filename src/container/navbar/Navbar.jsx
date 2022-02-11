@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react'
-
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 import logo from '../../assets/logo.png'
+import image from '../../assets/figma1.png'
 import './Navbar.css'
 
 const NavLinks = () => (
@@ -23,9 +23,11 @@ const NavLinks = () => (
 )
 
 const Resume = () => (
-  <button type="button" className="border__button">
-    Resume
-  </button>
+  <a href={image} download="resume">
+    <button type="button" className="border__button">
+      Resume
+    </button>
+  </a>
 )
 
 const body = document.body

@@ -4,7 +4,7 @@
   padding: 2rem;
 }
 
-.app__footer p{
+.app__footer a{
   font-family: var(--font-sub);
   color: var(--color-light);
   font-size: 0.85rem;
@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.app__footer p:hover{
+.app__footer a:hover{
   color: var(--color-sub);
 }
 
@@ -20,7 +20,7 @@
   .app__footer {
     padding: 6rem;
   }
-  .app__footer p{
+  .app__footer a{
     font-size: 1.8rem ;
   }
 }

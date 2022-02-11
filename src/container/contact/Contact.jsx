@@ -20,13 +20,13 @@ const Contact = () => {
             If you have a question or just want to say hi, do message me. I'll
             get back to you.
           </p>
-          <button className="border__button">Say Hello</button>
+          <a href='mailto:neerajprabhuram@gmail.com'><button className="border__button">Say Hello</button></a>
           <p className='mail'>neerajprabhuram@gmail.com</p>
           <div>
-            <FiGithub className='socials'/>
-            <FiInstagram className='socials'/>
-            <FiTwitter className='socials'/>
-            <FiLinkedin className='socials'/>
+            <a href='https://github.com/nxxwxj/'><FiGithub className='socials'/></a>
+            <a href='https://instagram.com/nxxwxj/'><FiInstagram className='socials'/></a>
+            <a href='https://twitter.com/nxxwxj/'><FiTwitter className='socials'/></a>
+            <a href='https://linkedin.com/in/neerajprabhuram/'><FiLinkedin className='socials'/></a>
           </div>
         </div>
         <div className="app__contact-img">

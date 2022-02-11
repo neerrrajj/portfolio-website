@@ -47,8 +47,8 @@ a {
   border: none;
   outline: none;
   padding: 0.7rem 1rem;
-  border: 1px solid #1079bc;
-  background: #1079bc;
+  border: 1px solid #077FCC;
+  background: #077FCC;
   border-radius: 5px;
   font-family: var(--font-sub);
   font-size: 0.85rem;
@@ -58,8 +58,8 @@ a {
 }
 
 .color__button:hover {
-  background: #0c5c8d;
-  border: 1px solid #0c5c8d;
+  background: #066eaf;
+  border: 1px solid #066eaf;
 }
 
 @media screen and (max-width: 600px) {
