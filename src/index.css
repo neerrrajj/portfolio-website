@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-  --font-main: 'Calibre', monospace;
-  --font-sub: 'Noto Sans Mono', sans-serif;
+  --font-main: 'Calibre', sans-serif;
+  --font-sub: 'Noto Sans Mono', monospace;
 
   --color-bg: #040c18;
   --color-sub: #099fff;
