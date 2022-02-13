@@ -1,6 +1,6 @@
 import './Header.css'
 import HeaderImage from '../../assets/headerimage.png'
-import image from '../../assets/figma1.png'
+import DesignStudioWebsiteImage from '../../assets/DesignStudioWebsiteImage.png'
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
           <span className="blue-text"> I'm available for jobs</span>.
         </p>
         <div className="app__header-content-cta">
-          <a href={image} download='resume'><button className="border__button">Resume</button></a>
+          <a href={DesignStudioWebsiteImage} download='resume'><button className="border__button">Resume</button></a>
           <a href='mailto:neerajprabhuram@gmail.com'><button className="color__button">Hire me</button></a>
         </div>
       </div>

@@ -1,10 +1,8 @@
-import ReactDOM from 'react-dom'
-
 import { Fragment, useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 import logo from '../../assets/logo.png'
-import image from '../../assets/figma1.png'
+import DesignStudioWebsiteImage from '../../assets/DesignStudioWebsiteImage.png'
 import './Navbar.css'
 
 const body = document.body
@@ -67,7 +65,7 @@ const Navbar = () => {
   )
 
   const Resume = () => (
-    <a href={image} download="resume">
+    <a href={DesignStudioWebsiteImage} download="resume">
       <button
         type="button"
         className="border__button"

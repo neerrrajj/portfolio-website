@@ -21,7 +21,8 @@ const Project = props => {
     <Fragment>
       <div className="app__project" onClick={showModalHandler}>
         <div className="app__project-img">
-          <img src={props.url} alt="project" />
+          <div className="app__project-img-overlay" />
+          <img src={props.thumbnail} alt="project" />
         </div>
         <div className="app__project-title">
           <p>{props.title}</p>
@@ -35,8 +36,13 @@ const Project = props => {
             title={props.title}
             url={props.url}
             type={props.type}
+            image={props.image}
+            download = {props.download}
+            thumbnail={props.thumbnail}
             description={props.description}
             tech={props.tech}
+            github={props.github}
+            link={props.link}
           />,
           document.getElementById('modal')
         )}

@@ -54,6 +54,7 @@
 }
 
 .socials:hover {
+  cursor: pointer;
   color: var(--color-sub);
 }
 

@@ -8,7 +8,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 60vw;
   width: 100%;
 }
 
@@ -42,11 +41,17 @@
   font-size: 1.5rem;
   margin-left: 1.25rem;
   transition: 0.2s ease-in-out;
-  /* border: 1px solid white; */
 }
 
 .app__heading-main-icon:hover {
   color: var(--color-sub);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .app__heading-main {
+    max-width: 60vw;
+  }
 }
 
 @media screen and (max-width: 600px) {

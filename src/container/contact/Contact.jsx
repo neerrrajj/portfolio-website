@@ -4,9 +4,14 @@ import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
 
 import './Contact.css'
 
+const openGithub = () => window.open('https://github.com/nxxwxj/', '_blank')
+const openInstagram = () => window.open('https://instagram.com/nxxwxj/', '_blank')
+const openTwitter = () => window.open('https://twitter.com/nxxwxj/', '_blank')
+const openLinkedin = () => window.open('https://linkedin.com/in/neerajprabhuram/', '_blank')
+
 const Contact = () => {
   return (
-    <div className="app__contact" id='contact'>
+    <div className="app__contact" id="contact">
       <Heading sub="Get in touch" title="Contact Me" />
       <div className="app__contact-content">
         <div className="app__contact-content-text">
@@ -37,18 +42,10 @@ const Contact = () => {
             </p>
           </div>
           <div>
-            <a href="https://github.com/nxxwxj/">
-              <FiGithub className="socials" />
-            </a>
-            <a href="https://instagram.com/nxxwxj/">
-              <FiInstagram className="socials" />
-            </a>
-            <a href="https://twitter.com/nxxwxj/">
-              <FiTwitter className="socials" />
-            </a>
-            <a href="https://linkedin.com/in/neerajprabhuram/">
-              <FiLinkedin className="socials" />
-            </a>
+            <FiGithub className="socials" onClick={openGithub} />
+            <FiInstagram className="socials" onClick={openInstagram} />
+            <FiTwitter className="socials" onClick={openTwitter} />
+            <FiLinkedin className="socials" onClick={openLinkedin} />
           </div>
         </div>
         <div className="app__contact-img">

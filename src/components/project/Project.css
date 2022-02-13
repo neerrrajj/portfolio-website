@@ -20,17 +20,32 @@
 }
 
 .app__project-img img {
-  width: 100%;
+  position: relative;
+  max-width: 360px;
+  max-height: 200px;
+  z-index: 5;
 }
 
-.app__project-img {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.app__project-img-overlay {
+  position: absolute;
+  background-color: var(--color-bg);
+  opacity: 0.3;
+  width:1440px;
+  height: 860px;
+  max-width: 360px;
+  max-height: 200px;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+
+.app__project:hover .app__project-img-overlay {
+  opacity: 0;
 }
 
 .app__project-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   padding: 0.5rem 1rem;
 }

@@ -1,51 +1,53 @@
 import { Heading, Project } from '../../components'
 
-import projectThumbnail from '../../assets/projectThumbnail.png'
+import DesignStudioWebsiteThumbnail from '../../assets/DesignStudioWebsiteThumbnail.png'
+import DesignStudioWebsiteImage from '../../assets/DesignStudioWebsiteImage.png'
+import DesignStudioWebsitePDF from '../../assets/DesignStudioWebsitePDF.pdf'
+import SAASLandingPageThumbnail from '../../assets/SAASLandingPageThumbnail.png'
+import SAASLandingPageImage from '../../assets/SAASLandingPageImage.png'
+import SAASLandingPagePDF from '../../assets/SAASLandingPagePDF.pdf'
+import PortfolioWebsiteThumbnail from '../../assets/PortfolioWebsiteThumbnail.png'
+import AiStartupThumbnail from '../../assets/AiStartupThumbnail.png'
 
 import './Projects.css'
 
 const figmaDesigns = [
   {
-    url: projectThumbnail,
-    title: 'Admin Dashboard',
+    thumbnail: DesignStudioWebsiteThumbnail,
+    title: 'Design Studio Landing page',
+    image: DesignStudioWebsiteImage,
+    download: DesignStudioWebsitePDF,
     id: 1,
   },
   {
-    url: projectThumbnail,
-    title: 'Landing page',
+    thumbnail: SAASLandingPageThumbnail,
+    title: 'SAAS Landing page',
+    image: SAASLandingPageImage,
+    download: SAASLandingPagePDF,
     id: 2,
-  },
-  {
-    url: projectThumbnail,
-    title: 'Graphic Design studio website',
-    id: 3,
   },
 ]
 
-const figmaToReact = [
+const designToCode = [
   {
-    url: projectThumbnail,
+    thumbnail: PortfolioWebsiteThumbnail,
     title: 'Portfolio website',
     description:
-      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-    tech: ['React', 'CSS', 'BEM'],
+      'My first and only full-fledged, fully-responsive \'Design to Code\' project, which I created from the ground up. This took me about 2 days of design in Figma and whole week of intense coding to bring this into reality. It was an incredible journey, learning about CSS, JS, and React along the way.',
+    tech: ['React', 'CSS', 'Javascript', 'HTML'],
+    github: 'https://github.com/nxxwxj/portfolio-website',
+    link: 'https://friendly-morse-b3055e.netlify.app',
     id: 4,
   },
   {
-    url: projectThumbnail,
+    thumbnail: AiStartupThumbnail,
     title: 'AI Startup website',
     description:
-      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-    tech: ['React', 'CSS', 'BEM'],
+    'This project was my first foray into the realm of React. I followed a tutorial and it turned out to be an excellent project for learning the fundamentals of React. This is a single-page website, and it offered me a great idea of how to turn a design (that wasn\'t mine) into an almost finished website.',
+    tech: ['React', 'CSS', 'HTML'],
+    github: 'https://github.com/nxxwxj/gpt3',
+    link: 'https://gracious-clarke-2832e1.netlify.app',
     id: 5,
-  },
-  {
-    url: projectThumbnail,
-    title: 'Restaurant website',
-    description:
-      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-    tech: ['React', 'CSS', 'BEM'],
-    id: 6,
   },
 ]
 
@@ -59,9 +61,11 @@ const Projects = () => {
           {figmaDesigns.map(project => {
             return (
               <Project
-                type="figma"
+                type="figmaDesigns"
                 title={project.title}
-                url={project.url}
+                thumbnail={project.thumbnail}
+                image={project.image}
+                download = {project.download}
                 key={project.id}
               />
             )
@@ -69,16 +73,18 @@ const Projects = () => {
         </div>
       </div>
       <div className="app__projects-figma_to_react">
-        <p className="app__projects-headings">Figma to React</p>
+        <p className="app__projects-headings">Design to Code</p>
         <div className="app__projects-project_list">
-          {figmaToReact.map(project => {
+          {designToCode.map(project => {
             return (
               <Project
-                type="figmaToReact"
+                type="designToCode"
                 title={project.title}
-                url={project.url}
+                thumbnail={project.thumbnail}
                 description={project.description}
                 tech={project.tech}
+                github={project.github}
+                link={project.link}
                 key={project.id}
               />
             )

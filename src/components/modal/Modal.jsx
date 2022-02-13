@@ -1,24 +1,27 @@
 import { Fragment } from 'react'
 import { Heading } from '../'
 
-import figma1 from '../../assets/figma1.png'
 import './Modal.css'
 
 const ModalContent = props => {
   return (
     <Fragment>
-      {props.type === 'figma' && (
+      {props.type === 'figmaDesigns' && (
         <div className="modal__overlay-img">
-          <img src={figma1} />
+          <img src={props.image} />
         </div>
       )}
-      {props.type === 'figmaToReact' && (
+      {props.type === 'designToCode' && (
         <div className="modal__overlay-content">
           <div className="modal__overlay-content-main">
-            <img src={props.url} />
+            <img src={props.thumbnail} />
             <div className="modal__overlay-content-tech">
               {props.tech.map(tech => {
-                return <span className='subtext' key={Math.random()}>{tech}</span>
+                return (
+                  <span className="subtext" key={Math.random()}>
+                    {tech}
+                  </span>
+                )
               })}
             </div>
           </div>
@@ -37,10 +40,19 @@ const Modal = props => {
         <p className="modal__overlay-close" onClick={props.onClose}>
           X
         </p>
-        <Heading sub="Figma Designs" title={props.title} type={props.type} />
+        <Heading
+          sub={props.type === 'figmaDesigns' ? "Figma Designs" : "Design to Code"}
+          title={props.title}
+          type={props.type}          
+          download = {props.download}
+          github={props.github}
+          link={props.link}
+        />
         <ModalContent
           type={props.type}
           url={props.url}
+          image={props.image}
+          thumbnail={props.thumbnail}
           description={props.description}
           tech={props.tech}
         />

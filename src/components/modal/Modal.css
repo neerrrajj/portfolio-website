@@ -15,7 +15,6 @@
   z-index: 500;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-  /* transition: all 3s ease; */
 }
 
 .modal__overlay {
@@ -73,7 +72,7 @@
 }
 
 .modal__overlay-content-main img {
-  max-width: 450px;
+  max-width: 420px;
   border: 0.25px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -102,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .modal__overlay {
     padding: 3rem 3rem;
   }
@@ -133,7 +132,7 @@
   }
 
   .modal__overlay-content {
-    padding-right: 0.5rem;
+    padding-right: 0rem;
   }
 }
 
@@ -141,6 +140,7 @@
   .modal__overlay {
     padding: 1.5rem 1.5rem;
     width: 85%;
+    max-height: 75vh;
   }
 
   .modal__overlay-content p {
