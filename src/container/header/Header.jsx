@@ -1,10 +1,10 @@
 import './Header.css'
 import HeaderImage from '../../assets/headerimage.png'
-import DesignStudioWebsiteImage from '../../assets/DesignStudioWebsiteImage.png'
+import resume from '../../assets/resume.pdf'
 
 const Header = () => {
   return (
-    <div className="app__header" id='home'>
+    <div className="app__header" id="home">
       <div className="app__header-content">
         <p className="subtext">Hi, my name is</p>
         <h1>Neeraj.</h1>
@@ -16,8 +16,12 @@ const Header = () => {
           <span className="blue-text"> I'm available for jobs</span>.
         </p>
         <div className="app__header-content-cta">
-          <a href={DesignStudioWebsiteImage} download='resume'><button className="border__button">Resume</button></a>
-          <a href='mailto:neerajprabhuram@gmail.com'><button className="color__button">Hire me</button></a>
+          <a href={resume} download="Neeraj-Resume">
+            <button className="border__button">Resume</button>
+          </a>
+          <a href="mailto:neerajprabhuram@gmail.com">
+            <button className="color__button">Hire me</button>
+          </a>
         </div>
       </div>
       <div className="app__header-img">

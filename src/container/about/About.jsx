@@ -49,7 +49,7 @@ const About = () => {
                 <BsFillCaretRightFill />
               </span>
               <span className="tech__heading">Tools : </span>
-              <span className="tech__name">Git & Github, VS Code</span>
+              <span className="tech__name">Git & Github, VS Code, Netlify</span>
             </li>
           </ul>
         </div>

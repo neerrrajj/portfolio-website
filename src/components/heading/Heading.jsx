@@ -14,15 +14,12 @@ const Icons = props => {
     window.open(url, '_blank')
   }
 
-  const downloadPdf = () => {
-    const url = props.download
-    window.open(url, '_blank')
-  }
-
   return (
     <Fragment>
       {props.type === 'figmaDesigns' && (
-        <FiDownload className="app__heading-main-icon" onClick={downloadPdf} />
+        <a href={props.download} download="Figma-Design">
+          <FiDownload className="app__heading-main-icon" />
+        </a>
       )}
       {props.type === 'designToCode' && (
         <Fragment>
