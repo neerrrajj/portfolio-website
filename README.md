@@ -1,13 +1,13 @@
-## Portfolio Website
+## 🌐 Portfolio Website
 
-This project was built using React and hosted on Netlify.
+This project was built using [React](https://reactjs.org/) and hosted on [Netlify](https://www.netlify.com/).
 
 ## 🛠 Installation & Set Up
 
-1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+1. Install dependencies using NPM
 
    ```sh
-   nvm install
+   npm install
    ```
 
 2. Start the development server
