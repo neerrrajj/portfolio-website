@@ -42,7 +42,7 @@ const About = () => {
                 <BsFillCaretRightFill />
               </span>
               <span className="tech__heading">Frameworks / Libraries : </span>
-              <span className="tech__name">React</span>
+              <span className="tech__name">React, Tailwind CSS</span>
             </li>
             <li>
               <span>
