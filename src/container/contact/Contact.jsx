@@ -4,7 +4,7 @@ import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
 
 import './Contact.css'
 
-const openGithub = () => window.open('https://github.com/nxxwxj/', '_blank')
+const openGithub = () => window.open('https://github.com/neerajprabhuram/', '_blank')
 const openInstagram = () => window.open('https://instagram.com/nxxwxj/', '_blank')
 const openTwitter = () => window.open('https://twitter.com/nxxwxj/', '_blank')
 const openLinkedin = () => window.open('https://linkedin.com/in/neerajprabhuram/', '_blank')
