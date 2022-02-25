@@ -1,3 +1,6 @@
+![Portfolio website](https://user-images.githubusercontent.com/68548685/155393083-34a6ff55-9474-4f59-82d9-5d48776ed762.png)
+
+
 ## 🌐 Portfolio Website
 
 This project was built using [React](https://reactjs.org/) and hosted on [Netlify](https://www.netlify.com/).
