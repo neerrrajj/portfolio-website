@@ -55,7 +55,7 @@ const designToCode = [
     title: 'Hulu clone',
     description:
     'This project is a clone of Hulu, built using latest techniques of web development like Server-side rendering and utility classes using technologies like Next.js and Tailwind CSS and also leveraging CSS features such as Grid and Flexbox to provide the best User Experience. ',
-    tech: ['Next JS', 'React', 'Tailwind CSS', 'Flexbox', 'Grid'],
+    tech: ['Next.js', 'Tailwind CSS', 'React', 'Flexbox', 'Grid'],
     github: 'https://github.com/neerajprabhuram/hulu-clone',
     link: 'https://hulu-clone-zeta-kohl.vercel.app/',
     id: 5,

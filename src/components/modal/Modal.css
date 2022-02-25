@@ -80,6 +80,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
+  flex-wrap: wrap;
 }
 
 .modal__overlay-content-tech span {
@@ -121,7 +122,7 @@
   }
 
   .modal__overlay-content-tech span {
-    margin: 0rem 1rem 0 0;
+    margin: 0rem 1rem 0.5rem 0;
   }
 
   .modal__overlay-content p {
