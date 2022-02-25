@@ -21,7 +21,7 @@
 .app__projects-project_list {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1000px) {
@@ -33,6 +33,7 @@
 @media screen and (max-width: 850px) {
   .app__projects-project_list {
     flex-direction: column;
+    padding: 1rem;
   }
 }
 

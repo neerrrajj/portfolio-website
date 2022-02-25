@@ -8,6 +8,7 @@ import SAASLandingPageImage from '../../assets/SAASLandingPageImage.png'
 import SAASLandingPagePDF from '../../assets/SAASLandingPagePDF.pdf'
 import PortfolioWebsiteThumbnail from '../../assets/PortfolioWebsiteThumbnail.png'
 import AiStartupThumbnail from '../../assets/AiStartupThumbnail.png'
+import HuluThumbnail from '../../assets/HuluThumbnail.png'
 
 import './Projects.css'
 
@@ -34,19 +35,29 @@ const designToCode = [
     title: 'Portfolio website',
     description:
       'My first and only full-fledged, fully-responsive \'Design to Code\' project, which I created from the ground up. This took me about 2 days of design in Figma and whole week of intense coding to bring this into reality. It was an incredible journey, learning about CSS, JS, and React along the way.',
-    tech: ['React', 'CSS', 'Javascript', 'HTML'],
-    github: 'https://github.com/nxxwxj/portfolio-website',
+    tech: ['React', 'CSS', 'Flexbox', 'Javascript', 'HTML'],
+    github: 'https://github.com/neerajprabhuram/portfolio-website',
     link: 'https://friendly-morse-b3055e.netlify.app',
-    id: 4,
+    id: 3,
   },
   {
     thumbnail: AiStartupThumbnail,
     title: 'AI Startup website',
     description:
     'This project was my first foray into the realm of React. I followed a tutorial and it turned out to be an excellent project for learning the fundamentals of React. This is a single-page website, and it offered me a great idea of how to turn a design (that wasn\'t mine) into an almost finished website.',
-    tech: ['React', 'CSS', 'HTML'],
-    github: 'https://github.com/nxxwxj/gpt3',
+    tech: ['React', 'CSS', 'Flexbox', 'HTML'],
+    github: 'https://github.com/neerajprabhuram/gpt3',
     link: 'https://gracious-clarke-2832e1.netlify.app',
+    id: 4,
+  },
+  {
+    thumbnail: HuluThumbnail,
+    title: 'Hulu clone',
+    description:
+    'This project is a clone of Hulu, built using latest techniques of web development like Server-side rendering and utility classes using technologies like Next.js and Tailwind CSS and also leveraging CSS features such as Grid and Flexbox to provide the best User Experience. ',
+    tech: ['Next JS', 'React', 'Tailwind CSS', 'Flexbox', 'Grid'],
+    github: 'https://github.com/neerajprabhuram/hulu-clone',
+    link: 'https://hulu-clone-zeta-kohl.vercel.app/',
     id: 5,
   },
 ]

@@ -86,6 +86,10 @@
   margin-bottom: 2rem;
 }
 
+.modal__overlay-content-tech span:last-child {
+  margin-bottom: 0;
+}
+
 .modal__overlay-content p {
   font-family: var(--font-main);
   color: var(--color-light);

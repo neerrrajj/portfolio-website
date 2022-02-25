@@ -9,6 +9,7 @@
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  margin: 1rem;
 }
 
 .app__project:hover {
