@@ -42,14 +42,14 @@ const About = () => {
                 <BsFillCaretRightFill />
               </span>
               <span className="tech__heading">Frameworks / Libraries : </span>
-              <span className="tech__name">React, Tailwind CSS</span>
+              <span className="tech__name">React, Tailwind CSS, Next.js</span>
             </li>
             <li>
               <span>
                 <BsFillCaretRightFill />
               </span>
               <span className="tech__heading">Tools : </span>
-              <span className="tech__name">Git & Github, VS Code, Netlify</span>
+              <span className="tech__name">Git & Github, VS Code, Netlify, Vercel</span>
             </li>
           </ul>
         </div>
