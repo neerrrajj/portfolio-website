@@ -12,8 +12,7 @@ const Header = () => {
         <p className="app__header-content-p">
           I'm a self-taught Front-end Developer and UI Designer specializing in
           creating websites and designing User Interfaces. Currently, I'm
-          focussed on mastering the art and
-          <span className="blue-text"> I'm available for jobs</span>.
+          <span className="blue-text"> looking for new opportunities </span> to put my skills to best use. 
         </p>
         <div className="app__header-content-cta">
           <a href={resume} download="Neeraj-Resume">
