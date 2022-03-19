@@ -34,7 +34,7 @@ const designToCode = [
     thumbnail: PortfolioWebsiteThumbnail,
     title: 'Portfolio website',
     description:
-      'My first and only full-fledged, fully-responsive \'Design to Code\' project, which I created from the ground up. This took me about 2 days of design in Figma and whole week of intense coding to bring this into reality. It was an incredible journey, learning about CSS, JS, and React along the way.',
+      'My first full-fledged, fully-responsive \'Design to Code\' project, which I created from the ground up. This took me about 2 days of design in Figma and a whole week of intense coding to bring this into reality. It was an incredible journey, learning about CSS, JS, and React along the way.',
     tech: ['React', 'CSS', 'Flexbox', 'Javascript', 'HTML'],
     github: 'https://github.com/neerajprabhuram/portfolio-website',
     link: 'https://friendly-morse-b3055e.netlify.app',
@@ -54,7 +54,7 @@ const designToCode = [
     thumbnail: HuluThumbnail,
     title: 'Hulu clone',
     description:
-    'This project is a clone of Hulu, built using latest techniques of web development like Server-side rendering and utility classes using technologies like Next.js and Tailwind CSS and also leveraging CSS features such as Grid and Flexbox to provide the best User Experience. ',
+    'This project is a clone of Hulu, built using the latest techniques of web development like Server-side rendering and utility classes using technologies like Next.js and Tailwind CSS and also leveraging CSS features such as Grid and Flexbox to provide the best User Experience. ',
     tech: ['Next.js', 'Tailwind CSS', 'React', 'TMDB', 'Grid'],
     github: 'https://github.com/neerajprabhuram/hulu-clone',
     link: 'https://hulu-clone-zeta-kohl.vercel.app/',

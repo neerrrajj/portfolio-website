@@ -5,21 +5,22 @@ import './About.css'
 
 const About = () => {
   return (
-    <div className="app__about" id='about'>
+    <div className="app__about" id="about">
       <Heading sub="Who am I?" title="About Me" />
       <div className="app__about-content">
         <div className="app__about-content-text">
           <p>
-            Hello! My name is Neeraj and I love designing and creating stuff. My
-            fascination with websites began many years ago when I imagined how
-            wonderful it would be to create helpful websites and publish them on
-            the internet for everyone to use.
+            Hello! My name is Neeraj, and I consider myself to be a creative
+            person. My fascination with websites began many years ago when I
+            imagined how wonderful it would be to create useful websites and
+            make them available to the public on the internet.
           </p>
           <p>
-            And here I am today, leveraging the power of code to create
-            user-centric, aesthetically-pleasing design. My major goal right now
-            is to join a startup that aligns with my vision and help them in
-            reaching greater heights.
+            And now, here I am, leveraging the power of code to build beautiful
+            websites. It is a true passion of mine to create state-of-the-art,
+            user-friendly websites. My major goal right now is to join a startup
+            that aligns with my vision and help them in reaching greater
+            heights.
           </p>
           <p>Here are a few technologies I'm familiar with:</p>
           <ul>
@@ -49,7 +50,16 @@ const About = () => {
                 <BsFillCaretRightFill />
               </span>
               <span className="tech__heading">Tools : </span>
-              <span className="tech__name">Git & Github, VS Code, Netlify, Vercel</span>
+              <span className="tech__name">
+                REST API, GraphQL, GraphCMS, Git & Github
+              </span>
+            </li>
+            <li>
+              <span>
+                <BsFillCaretRightFill />
+              </span>
+              <span className="tech__heading">Others : </span>
+              <span className="tech__name">VS Code, Netlify, Vercel</span>
             </li>
           </ul>
         </div>
