@@ -49,7 +49,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="app__contact-img">
-          <img src={contactImage} />
+          <img src={contactImage} alt=" "/>
         </div>
       </div>
     </div>

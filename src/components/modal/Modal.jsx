@@ -8,13 +8,13 @@ const ModalContent = props => {
     <Fragment>
       {props.type === 'figmaDesigns' && (
         <div className="modal__overlay-img">
-          <img src={props.image} />
+          <img src={props.image} alt=" "/>
         </div>
       )}
       {props.type === 'designToCode' && (
         <div className="modal__overlay-content">
           <div className="modal__overlay-content-main">
-            <img src={props.thumbnail} />
+            <img src={props.thumbnail} alt=" "/>
             <div className="modal__overlay-content-tech">
               {props.tech.map(tech => {
                 return (
